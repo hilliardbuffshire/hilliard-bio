@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bio-Supercycle — Tech-Dominance Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#c9a84c; --gold-light:#e8c97a; --bg:#0d0d0f; --bg2:#13131a;
+    --text:#f0ead8; --text-dim:#a09880; --border:rgba(201,168,76,0.2);
+    --strong:#3fd18a; --rising:#4caf7a; --steady:#9a937e; --cooling:#cf6679; --mixed:#ce8f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;line-height:1.55;padding:0 16px 64px}
+  .wrap{max-width:1000px;margin:0 auto}
+  header{text-align:center;padding:40px 0 18px;position:relative}
+  .back{position:absolute;left:0;top:44px;color:var(--gold);text-decoration:none;font-size:13px;font-family:'Inter',sans-serif}
+  .back:hover{color:var(--gold-light)}
+  .icon{font-size:46px;line-height:1}
+  h1{font-family:'Noto Sans KR',sans-serif;font-weight:300;font-size:32px;letter-spacing:1px;margin-top:10px}
+  .sub{color:var(--text-dim);font-weight:300;margin-top:8px;font-size:15px}
+  .meta{color:var(--text-dim);font-size:13px;margin-top:14px;font-family:'Inter',sans-serif}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px 0;opacity:.55}
+  .row{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:12px;display:flex;gap:16px;align-items:flex-start;transition:transform .15s ease,border-color .15s ease}
+  .row:hover{transform:translateY(-3px);border-color:rgba(201,168,76,0.4)}
+  .rank{font-family:'Inter',sans-serif;font-size:22px;font-weight:600;color:var(--text-dim);min-width:30px;text-align:center;padding-top:2px}
+  .bodycol{flex:1;min-width:0}
+  .top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .badge{font-family:'Inter',sans-serif;font-size:11px;font-weight:600;padding:3px 11px;border-radius:20px;letter-spacing:.4px;white-space:nowrap}
+  .name{font-weight:500;font-size:17px}
+  .tkr{color:var(--text-dim);font-weight:400;font-size:14px;font-family:'Inter',sans-serif}
+  .stat{color:var(--text-dim);font-size:13px;margin-top:7px;font-family:'Inter',sans-serif}
+  .thesis{margin-top:9px;font-size:14px;font-weight:300}
+  .latest{margin-top:8px;font-size:13px;color:var(--text-dim)}
+  .latest a{color:var(--gold);text-decoration:none}
+  .latest a:hover{color:var(--gold-light);text-decoration:underline}
+  .foot{text-align:center;color:var(--text-dim);font-size:12px;margin-top:34px;font-weight:300;line-height:1.8}
+  .err{text-align:center;color:var(--cooling);margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="https://hilliardbuffshire.github.io/hilliard-hub/">← Hub</a>
+    <div class="icon">🧬</div>
+    <h1>Bio-Supercycle</h1>
+    <p class="sub">유전자가위 · 생명연장 대장주 — 기술 모멘텀 + AI 분석으로 자동 발굴</p>
+    <p class="meta" id="meta">불러오는 중…</p>
+  </header>
+  <div class="divider"></div>
+  <main id="board"></main>
+  <p class="foot">
+    SEC EDGAR · ClinicalTrials.gov · PubMed/NIH 교차검증 · 모든 데이터 출처 표기 · 매일 자동 갱신<br>
+    리서치 도구일 뿐 투자 자문이 아닙니다 · Hilliard Buffshire — Bio-Supercycle Research Platform
+  </p>
+</div>
+<script>
+  const COLORS={STRONG_RISING:'--strong',RISING:'--rising',STEADY:'--steady',COOLING:'--cooling',MIXED:'--mixed',INSUFFICIENT_DATA:'--steady'};
+  const LABEL={STRONG_RISING:'강한 상승',RISING:'상승',STEADY:'보합',COOLING:'둔화',MIXED:'혼조',INSUFFICIENT_DATA:'데이터 부족'};
+  function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  fetch('data.json?v='+Date.now()).then(r=>r.json()).then(render).catch(()=>{
+    document.getElementById('meta').textContent='';
+    document.getElementById('board').innerHTML='<p class="err">데이터를 불러오지 못했습니다.</p>';
+  });
+  function render(d){
+    const dt=d.generated_at?new Date(d.generated_at):null;
+    document.getElementById('meta').textContent='최종 갱신: '+(dt?dt.toLocaleString('ko-KR'):'—')+' · '+d.watchlist.length+'개 종목 추적';
+    const board=document.getElementById('board');
+    d.watchlist.forEach((c,i)=>{
+      const color='var('+(COLORS[c.signal]||'--steady')+')';
+      const el=document.createElement('div');el.className='row';
+      let h='<div class="rank">'+(i+1)+'</div><div class="bodycol">';
+      h+='<div class="top"><span class="badge" style="background:'+color+'22;color:'+color+';border:1px solid '+color+'55">'+(LABEL[c.signal]||esc(c.signal))+'</span>';
+      h+='<span class="name">'+esc(c.company)+(c.ticker?' <span class="tkr">('+esc(c.ticker)+')</span>':'')+'</span></div>';
+      h+='<div class="stat">기술 모멘텀 accel '+esc(c.accel)+' · 연구 '+esc(c.prior_pubs)+'→'+esc(c.recent_pubs)+'편/12개월 · '+esc(c.subsector)+'</div>';
+      if(c.thesis) h+='<div class="thesis">'+esc(c.thesis)+'</div>';
+      if(c.latest&&c.latest.title) h+='<div class="latest">최신 연구: <a href="'+esc(c.latest.url)+'" target="_blank" rel="noopener">'+esc(c.latest.title)+'</a></div>';
+      h+='</div>';
+      el.innerHTML=h;board.appendChild(el);
+    });
+  }
+</script>
+</body>
+</html>
