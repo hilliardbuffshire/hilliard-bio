@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-06-01T14:04:18.288187+00:00",
+  "watchlist": [
+    {
+      "company": "Verve Therapeutics",
+      "ticker": "VERV",
+      "subsector": "GeneEditing",
+      "signal": "RISING",
+      "accel": 2.19,
+      "prior_pubs": 21,
+      "recent_pubs": 46,
+      "thesis": null,
+      "latest": {
+        "title": "In Vivo Base Editing of PCSK9 with VERVE-102 for Hypercholesterolemia.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42187087/",
+        "date": "2026 May 25"
+      }
+    },
+    {
+      "company": "Prime Medicine",
+      "ticker": "PRME",
+      "subsector": "GeneEditing",
+      "signal": "RISING",
+      "accel": 1.34,
+      "prior_pubs": 50,
+      "recent_pubs": 67,
+      "thesis": null,
+      "latest": {
+        "title": "Temperate phages enhance bacterial host fitness via RNA-guided flagellar remodelling.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42204342/",
+        "date": "2026 May 27"
+      }
+    },
+    {
+      "company": "CRISPR Therapeutics",
+      "ticker": "CRSP",
+      "subsector": "GeneEditing",
+      "signal": "STEADY",
+      "accel": 1.07,
+      "prior_pubs": 340,
+      "recent_pubs": 364,
+      "thesis": null,
+      "latest": {
+        "title": "Outcomes and safety of CAR-T cell therapy in B-NHL patients with reduced left ventricular ejection fraction.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42217793/",
+        "date": "2026 May 29"
+      }
+    },
+    {
+      "company": "Unity Biotechnology",
+      "ticker": "UBX",
+      "subsector": "Longevity",
+      "signal": "STEADY",
+      "accel": 1.0,
+      "prior_pubs": 18,
+      "recent_pubs": 18,
+      "thesis": null,
+      "latest": {
+        "title": "Electrophilic compound screening identifies GPX4-dependent ferroptosis as a senescence vulnerability.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42032311/",
+        "date": "2026 May"
+      }
+    },
+    {
+      "company": "Beam Therapeutics",
+      "ticker": "BEAM",
+      "subsector": "GeneEditing",
+      "signal": "STEADY",
+      "accel": 0.9,
+      "prior_pubs": 71,
+      "recent_pubs": 64,
+      "thesis": null,
+      "latest": {
+        "title": "AI-guided redesign of laboratory-evolved reverse transcriptases enhances prime editing.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42168701/",
+        "date": "2026 May 21"
+      }
+    },
+    {
+      "company": "Editas Medicine",
+      "ticker": "EDIT",
+      "subsector": "GeneEditing",
+      "signal": "STEADY",
+      "accel": 0.82,
+      "prior_pubs": 76,
+      "recent_pubs": 62,
+      "thesis": null,
+      "latest": {
+        "title": "AI-guided redesign of laboratory-evolved reverse transcriptases enhances prime editing.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42168701/",
+        "date": "2026 May 21"
+      }
+    },
+    {
+      "company": "Intellia Therapeutics",
+      "ticker": "NTLA",
+      "subsector": "GeneEditing",
+      "signal": "STEADY",
+      "accel": 0.8,
+      "prior_pubs": 56,
+      "recent_pubs": 45,
+      "thesis": null,
+      "latest": {
+        "title": "Prime assembly with linear DNA donors enables large genomic insertions.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42056515/",
+        "date": "2026 Apr 29"
+      }
+    },
+    {
+      "company": "Longeveron",
+      "ticker": "LGVN",
+      "subsector": "Longevity",
+      "signal": "COOLING",
+      "accel": 0.4,
+      "prior_pubs": 5,
+      "recent_pubs": 2,
+      "thesis": null,
+      "latest": {
+        "title": "Randomized phase 2b dose-escalation trial of stem cell therapy with laromestrocel for aging frailty.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41747733/",
+        "date": "2026 Mar 5"
+      }
+    }
+  ]
+}
