@@ -1,124 +1,373 @@
 {
-  "generated_at": "2026-06-01T14:04:18.288187+00:00",
-  "watchlist": [
-    {
-      "company": "Verve Therapeutics",
-      "ticker": "VERV",
-      "subsector": "GeneEditing",
-      "signal": "RISING",
-      "accel": 2.19,
-      "prior_pubs": 21,
-      "recent_pubs": 46,
-      "thesis": null,
-      "latest": {
-        "title": "In Vivo Base Editing of PCSK9 with VERVE-102 for Hypercholesterolemia.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42187087/",
-        "date": "2026 May 25"
-      }
-    },
-    {
-      "company": "Prime Medicine",
-      "ticker": "PRME",
-      "subsector": "GeneEditing",
-      "signal": "RISING",
-      "accel": 1.34,
-      "prior_pubs": 50,
-      "recent_pubs": 67,
-      "thesis": null,
-      "latest": {
-        "title": "Temperate phages enhance bacterial host fitness via RNA-guided flagellar remodelling.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42204342/",
-        "date": "2026 May 27"
-      }
-    },
+  "generated_at": "2026-06-01T19:09:09.600521+00:00",
+  "mode": "dominance",
+  "companies": [
     {
       "company": "CRISPR Therapeutics",
       "ticker": "CRSP",
       "subsector": "GeneEditing",
-      "signal": "STEADY",
-      "accel": 1.07,
-      "prior_pubs": 340,
-      "recent_pubs": 364,
-      "thesis": null,
-      "latest": {
-        "title": "Outcomes and safety of CAR-T cell therapy in B-NHL patients with reduced left ventricular ejection fraction.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42217793/",
-        "date": "2026 May 29"
-      }
-    },
-    {
-      "company": "Unity Biotechnology",
-      "ticker": "UBX",
-      "subsector": "Longevity",
-      "signal": "STEADY",
-      "accel": 1.0,
-      "prior_pubs": 18,
-      "recent_pubs": 18,
-      "thesis": null,
-      "latest": {
-        "title": "Electrophilic compound screening identifies GPX4-dependent ferroptosis as a senescence vulnerability.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42032311/",
-        "date": "2026 May"
-      }
-    },
-    {
-      "company": "Beam Therapeutics",
-      "ticker": "BEAM",
-      "subsector": "GeneEditing",
-      "signal": "STEADY",
-      "accel": 0.9,
-      "prior_pubs": 71,
-      "recent_pubs": 64,
-      "thesis": null,
-      "latest": {
-        "title": "AI-guided redesign of laboratory-evolved reverse transcriptases enhances prime editing.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42168701/",
-        "date": "2026 May 21"
-      }
-    },
-    {
-      "company": "Editas Medicine",
-      "ticker": "EDIT",
-      "subsector": "GeneEditing",
-      "signal": "STEADY",
-      "accel": 0.82,
-      "prior_pubs": 76,
-      "recent_pubs": 62,
-      "thesis": null,
-      "latest": {
-        "title": "AI-guided redesign of laboratory-evolved reverse transcriptases enhances prime editing.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42168701/",
-        "date": "2026 May 21"
+      "balanced": {
+        "score": 0.635,
+        "coverage": 1.0
+      },
+      "platform_moat": {
+        "score": 0.668,
+        "coverage": 1.0
+      },
+      "bull": "Co-developer of the first approved CRISPR medicine (Casgevy) with a broad editing platform extending into oncology and in vivo programs.",
+      "risk": "Lead value is shared with Vertex, IP is contested, and newer editing modalities (base/prime/in vivo) may leapfrog classic Cas9.",
+      "confidence": 0.4,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.75,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "tech_moat": {
+          "score": 0.65,
+          "basis": "estimate"
+        },
+        "regulatory": {
+          "score": 0.4,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": 0.6,
+          "basis": "estimate"
+        },
+        "tam": {
+          "score": 0.6,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": 0.65,
+          "basis": "estimate"
+        }
       }
     },
     {
       "company": "Intellia Therapeutics",
       "ticker": "NTLA",
       "subsector": "GeneEditing",
-      "signal": "STEADY",
-      "accel": 0.8,
-      "prior_pubs": 56,
-      "recent_pubs": 45,
-      "thesis": null,
-      "latest": {
-        "title": "Prime assembly with linear DNA donors enables large genomic insertions.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42056515/",
-        "date": "2026 Apr 29"
+      "balanced": {
+        "score": 0.562,
+        "coverage": 1.0
+      },
+      "platform_moat": {
+        "score": 0.637,
+        "coverage": 1.0
+      },
+      "bull": "Pioneer of one-time in vivo CRISPR editing with a broad platform that could define the curative gene-editing category if human durability holds.",
+      "risk": "Thin ~$135M cash against ~$81M/quarter burn and zero approvals — a financing/dilution cliff before any product reaches market.",
+      "confidence": 0.4,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.75,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": 0.65,
+          "basis": "estimate"
+        },
+        "tech_moat": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "regulatory": {
+          "score": 0.1,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": 0.3,
+          "basis": "fact"
+        },
+        "tam": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": 0.6,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "company": "Beam Therapeutics",
+      "ticker": "BEAM",
+      "subsector": "GeneEditing",
+      "balanced": {
+        "score": 0.525,
+        "coverage": 0.78
+      },
+      "platform_moat": {
+        "score": 0.626,
+        "coverage": 0.88
+      },
+      "bull": "Pioneer of base editing—a differentiated single-nucleotide platform with broad multi-target optionality and deep technical IP that could define the precision gene-editing category.",
+      "risk": "Clinical proof is absent from the bundle and runway looks tight relative to burn; no approvals or designations to confirm dominance.",
+      "confidence": 0.4,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.75,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": null,
+          "basis": "insufficient"
+        },
+        "tech_moat": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "regulatory": {
+          "score": 0.1,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": 0.3,
+          "basis": "fact"
+        },
+        "tam": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": 0.5,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "company": "Verve Therapeutics",
+      "ticker": "VERV",
+      "subsector": "GeneEditing",
+      "balanced": {
+        "score": 0.514,
+        "coverage": 0.87
+      },
+      "platform_moat": {
+        "score": 0.557,
+        "coverage": 0.9
+      },
+      "bull": "A single-course in vivo base edit that permanently lowers LDL could redefine chronic CVD treatment, and Verve is among the first to reach human data.",
+      "risk": "Single-mechanism focus (PCSK9), no approvals/designations, unknown cash runway, and a crowded LDL-lowering competitive field including established siRNA/antibody drugs.",
+      "confidence": 0.4,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.55,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": 0.5,
+          "basis": "fact"
+        },
+        "tech_moat": {
+          "score": 0.6,
+          "basis": "estimate"
+        },
+        "regulatory": {
+          "score": 0.1,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": null,
+          "basis": "insufficient"
+        },
+        "tam": {
+          "score": 0.8,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": 0.55,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "company": "Editas Medicine",
+      "ticker": "EDIT",
+      "subsector": "GeneEditing",
+      "balanced": {
+        "score": 0.366,
+        "coverage": 0.78
+      },
+      "platform_moat": {
+        "score": 0.434,
+        "coverage": 0.88
+      },
+      "bull": "Deep CRISPR/prime-editing research engine (62 pubs/12mo) could yield a differentiated multi-program editing platform.",
+      "risk": "No approvals, thin cash runway, and trailing approved CRISPR competitors — clinical proof entirely unverifiable here.",
+      "confidence": 0.35,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.55,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": null,
+          "basis": "insufficient"
+        },
+        "tech_moat": {
+          "score": 0.45,
+          "basis": "estimate"
+        },
+        "regulatory": {
+          "score": 0.05,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": 0.2,
+          "basis": "fact"
+        },
+        "tam": {
+          "score": 0.6,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": 0.3,
+          "basis": "estimate"
+        }
+      }
+    },
+    {
+      "company": "Prime Medicine",
+      "ticker": "PRME",
+      "subsector": "GeneEditing",
+      "balanced": {
+        "score": 0.438,
+        "coverage": 0.68
+      },
+      "platform_moat": {
+        "score": 0.569,
+        "coverage": 0.8
+      },
+      "bull": "Prime editing could become the most versatile, precise genome-editing modality, enabling a broad pipeline from a single foundational platform.",
+      "risk": "Critically low cash (~$64M vs ~$34M/quarter burn) with no approvals, no visible partnerships, and no available clinical proof threatens survival before dominance.",
+      "confidence": 0.4,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": null,
+          "basis": "insufficient"
+        },
+        "tech_moat": {
+          "score": 0.65,
+          "basis": "estimate"
+        },
+        "regulatory": {
+          "score": 0.0,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": 0.2,
+          "basis": "fact"
+        },
+        "tam": {
+          "score": 0.5,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": null,
+          "basis": "insufficient"
+        }
+      }
+    },
+    {
+      "company": "Unity Biotechnology",
+      "ticker": "UBX",
+      "subsector": "Longevity",
+      "balanced": {
+        "score": 0.392,
+        "coverage": 0.55
+      },
+      "platform_moat": {
+        "score": 0.427,
+        "coverage": 0.7
+      },
+      "bull": "If senolytic therapy is clinically validated, Unity's deep senescence-biology research could anchor a large multi-disease aging franchise.",
+      "risk": "Senolytics remain clinically unproven and Unity has a history of high-profile trial setbacks; zero approvals and no visible runway or partnerships in the bundle.",
+      "confidence": 0.28,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.45,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": null,
+          "basis": "insufficient"
+        },
+        "tech_moat": {
+          "score": 0.4,
+          "basis": "estimate"
+        },
+        "regulatory": {
+          "score": 0.05,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": null,
+          "basis": "insufficient"
+        },
+        "tam": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": null,
+          "basis": "insufficient"
+        }
       }
     },
     {
       "company": "Longeveron",
       "ticker": "LGVN",
       "subsector": "Longevity",
-      "signal": "COOLING",
-      "accel": 0.4,
-      "prior_pubs": 5,
-      "recent_pubs": 2,
-      "thesis": null,
-      "latest": {
-        "title": "Randomized phase 2b dose-escalation trial of stem cell therapy with laromestrocel for aging frailty.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41747733/",
-        "date": "2026 Mar 5"
+      "balanced": {
+        "score": 0.336,
+        "coverage": 0.72
+      },
+      "platform_moat": {
+        "score": 0.345,
+        "coverage": 0.62
+      },
+      "bull": "An allogeneic MSC platform (laromestrocel) addressing multiple massive aging/neurodegenerative markets with a Phase 2b asset could anchor a regenerative-medicine franchise if data convert.",
+      "risk": "Single-asset, mid-stage company with no approvals, no disclosed partnerships, and a dangerously thin ~$15.8M cash runway in a crowded, historically disappointing MSC field.",
+      "confidence": 0.4,
+      "factors": {
+        "platform_breadth": {
+          "score": 0.35,
+          "basis": "estimate"
+        },
+        "clinical_proof": {
+          "score": 0.4,
+          "basis": "fact"
+        },
+        "tech_moat": {
+          "score": null,
+          "basis": "insufficient"
+        },
+        "regulatory": {
+          "score": 0.1,
+          "basis": "fact"
+        },
+        "smart_money": {
+          "score": 0.15,
+          "basis": "fact"
+        },
+        "tam": {
+          "score": 0.7,
+          "basis": "estimate"
+        },
+        "competitive_lead": {
+          "score": null,
+          "basis": "insufficient"
+        }
       }
     }
   ]
